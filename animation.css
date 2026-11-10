@@ -1,0 +1,58 @@
+.main{
+   display: flex;
+   gap:10px;
+   height:100vh;
+   align-items: center;
+   justify-content: center;
+   
+
+}
+.main>div{
+    width:15px;
+    height: 100px;
+    border-radius:50px;
+    animation-name:music;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+   
+    
+    
+}
+.frist{
+    background-color: brown;
+    animation-delay: 0.1s;
+    
+}
+.second{
+    background-color: blueviolet;
+    animation-delay: 0.3s;
+}
+.third{
+    background-color: aqua;
+    animation-delay: 0.5s;
+
+}
+.forth{
+    background-color:orange;
+    animation-delay: 0.2s;
+}
+.fifth{
+    background-color: red;
+    animation-delay: 0.4s;
+
+}
+.six{
+    background-color:gray;
+    animation-delay: 0.6s;
+}
+@keyframes music{
+    from{
+        transform: scaleY(0.3);
+
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
